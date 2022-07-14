@@ -31,7 +31,7 @@ export default function Register() {
         };
 
         //registerのapiを叩く。第二引数で登録するユーザーを指定
-        await axios.post("/auth/register", user);
+        // await axios.post("/auth/register", user);
 
         //ログインページにリダイレクト
         navigate("/login")

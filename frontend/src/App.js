@@ -17,7 +17,8 @@ function App() {
     <Router>
       <Routes>
         {/* userが存在すればホーム、存在しなければ登録画面 */}
-        <Route path="/" element={user ? <Home /> : <Register/>}/>
+        <Route path="/" element={<Home />}/>
+        {/* <Route path="/" element={user ? <Home /> : <Register/>}/> */}
 
         {/* userが存在すればホームにリダイレクト */}
         <Route path="/login" element={user ? <Navigate to="/" /> : <Login />}/>
