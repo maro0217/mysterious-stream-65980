@@ -44,5 +44,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:8000/api/"
+  "proxy": "https://mysterious-stream-65980.herokuapp.com/api/"
 }

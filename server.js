@@ -22,10 +22,7 @@ mongoose
         console.log(err)
     });
 
-//ルートディレクトリ
-app.get("/", (req, res) => {
-    res.send("hello express")
-});
+
 
 //ミドルウェア
 // 第1引数：デフォルトのエンドポイント
