@@ -14,6 +14,8 @@ export default function Register() {
   
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(username.current.value);
+    
 
     //パスワードと確認用のパスワードが合っているかどうかを確認
     if(password.current.value !== passwordConfirmation.current.value) {
@@ -29,6 +31,7 @@ export default function Register() {
           email: email.current.value,
           password: password.current.value,
         };
+        console.log(user);
 
         //registerのapiを叩く。第二引数で登録するユーザーを指定
         await axios.post("/auth/register", user);

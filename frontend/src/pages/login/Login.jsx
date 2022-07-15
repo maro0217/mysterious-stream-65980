@@ -15,8 +15,8 @@ export default function Login() {
     e.preventDefault();
 
     //入力された値を取得
-    // console.log(email.current.value);
-    // console.log(password.current.value);
+    console.log(email.current.value);
+    console.log(password.current.value);
     loginCall(
       {
         email: email.current.value,
