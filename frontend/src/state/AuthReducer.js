@@ -17,7 +17,7 @@ const AuthReducer = (state, action) => {
                 error: false,
             };
 
-        case "LOGIN_START":
+        case "LOGIN_FAILED":
             return {
                 user: null,
                 isFecthing: false,
